@@ -9,5 +9,5 @@ Explore ES6 iterators and generators
 
 ## Run the code
 ````
-[project root directory]> node index.js
+[project root directory]> node <filename>.js
 ````
