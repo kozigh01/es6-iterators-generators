@@ -6,24 +6,27 @@ const list = [
 ];
 
 // for Loop
-console.log('For Loop:');
+console.group('For Loop:');
 for (let i = 0; i < list.length; i++) {
-  console.log('   ', list[i]);
+  console.log(list[i]);
 }
+console.groupEnd();
 
 // while loop
-console.log('While loop:');
+console.group('While loop:');
 let i = 0;
 while (i < list.length) {
-  console.log('  ', list[i]);
+  console.log(list[i]);
   i++;
 }
+console.groupEnd();
 
 // for-of loop
-console.log('For-of: ')
+console.group('For-of: ');
 for (let item of list) {
-  console.log('  ', item);
+  console.log(item);
 }
+console.groupEnd();
 
 
 // Iterable shape example
@@ -57,22 +60,26 @@ const myiterable = {
 // console.log(iterator.next());
 // console.log(iterator.next());
 
-console.log('Custom Iterable: for-of');
+console.group('Custom Iterable: for-of');
 for(const item of myiterable) {
-  console.log(`   ${item}`);
+  console.log(`${item}`);
 }
+console.groupEnd();
 
-console.log('Custom Iterable: destructuring');
+console.group('Custom Iterable: destructuring');
 const [first, second, third] = myiterable;
-console.log('   ', first, second, third);
+console.log(first, second, third);
+console.groupEnd();
 
-console.log('Custom Iterable: spread');
-console.log('   ', [...myiterable].reverse());
+console.group('Custom Iterable: spread');
+console.log([...myiterable].reverse());
+console.groupEnd();
 
-console.log('Custom Iterable: set');
+console.group('Custom Iterable: set');
 const newset = new Set(myiterable);
-console.log(`   myiterable contains 'is': ${newset.has('is')}`);
-console.log(`   myiterable contains 'not': ${newset.has('not')}`);
+console.log(`myiterable contains 'is': ${newset.has('is')}`);
+console.log(`myiterable contains 'not': ${newset.has('not')}`);
+console.groupEnd();
 
 // Making object iterable
 const autors = {
