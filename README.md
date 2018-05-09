@@ -19,5 +19,5 @@ There are a couple different ways to run the code in the repository files:
   3. Open "Snippets" tab (may need to click '>>' to see "Snippets" tab)
   4. Click "+ New snippet" and give choose a name
   5. Copy and paste javascript code into the new snippet
-  6. Click the :arrow_forward Ctrl+Enter button at the bottom of the snippet editor
+  6. Click the <%= octicon "triangle-right" %> Ctrl+Enter button at the bottom of the snippet editor
   
